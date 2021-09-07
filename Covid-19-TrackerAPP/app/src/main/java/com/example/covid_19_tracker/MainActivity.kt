@@ -1,6 +1,7 @@
 package com.example.covid_19_tracker
 
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -12,14 +13,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         getData()
     }
     private fun getData(){
-
+        val textview : TextView = findViewById(R.id.text_sample)
         val queue = Volley.newRequestQueue(this)
         val url = "https://data.covid19india.org/v4/min/data.min.json"
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             { response ->
+                textview.text = response.keys().next()
                 Toast.makeText(this,"api call success",Toast.LENGTH_LONG).show()
              },
             { error ->

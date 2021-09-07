@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Covid-19-Tracker</string>
+    <string name="s_ut">S/UT</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="active">Active</string>
+    <string name="vaccinated">Vaccinated</string>
 </resources>

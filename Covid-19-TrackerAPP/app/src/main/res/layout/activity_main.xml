@@ -4,40 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="500px">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="20dp"
-            >
-            <TextView
-                android:id="@+id/text_input1"
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Confirmed"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="00932"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4545164"
-                android:textSize="25sp"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/s_ut"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#c0c0c0"
+                    android:layout_marginStart="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirmed"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"/>
 
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#c0c0c0"
+                    android:layout_marginStart="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/active"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"/>
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recyclerView"-->
-<!--        android:layout_width="405dp"-->
-<!--        android:layout_height="638dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        tools:layout_editor_absoluteX="3dp" />-->
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#c0c0c0"
+                    android:layout_marginStart="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vaccinated"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"/>
+                </LinearLayout>
 
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="405dp"
+            android:layout_height="638dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="3dp" />
 </LinearLayout>

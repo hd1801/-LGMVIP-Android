@@ -15,6 +15,7 @@
             android:padding="20dp"
             >
             <TextView
+                android:id="@+id/text_input1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
@@ -32,11 +33,11 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="405dp"
-        android:layout_height="638dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="3dp" />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerView"-->
+<!--        android:layout_width="405dp"-->
+<!--        android:layout_height="638dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:layout_editor_absoluteX="3dp" />-->
 
 </LinearLayout>

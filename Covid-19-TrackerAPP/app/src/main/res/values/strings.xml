@@ -4,4 +4,5 @@
     <string name="confirmed">Confirmed</string>
     <string name="active">Active</string>
     <string name="vaccinated">Vaccinated</string>
+    <string name="recovered">Recovered</string>
 </resources>

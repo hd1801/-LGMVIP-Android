@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="state_ft">#007bff</color>
+    <color name="vaccine_ft">#9673b9</color>
+    <color name="Confirmed_ft">#ff073a</color>
+    <color name="tab_bg">#161625</color>
+    <color name="rest_ft">#6c757d</color>
+    <color name="recovered_ft">#28a745</color>
+    <color name="card_bg">#1e1e30</color>
 </resources>

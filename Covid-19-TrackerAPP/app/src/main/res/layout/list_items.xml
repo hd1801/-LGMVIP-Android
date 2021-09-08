@@ -1,103 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:paddingVertical="3dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/card_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center_vertical"
-            >
-            <TextView
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+    <TextView
                 android:id="@+id/text_State"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:padding="10dp"
-                android:layout_gravity="center_horizontal"/>
+                android:text="AL"
+                android:textColor="@color/state_ft"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"/>
             <View
-                android:layout_width="2dp"
+                android:layout_width="1dp"
+                android:layout_weight="0"
                 android:layout_height="match_parent"
-                android:background="#c0c0c0"
+                android:background="@color/tab_bg"
                 android:layout_marginStart="10dp"/>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
+                android:layout_weight="0"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="8dp"
-                android:layout_gravity="">
+                android:layout_gravity="center_vertical">
             <TextView
                 android:id="@+id/total_confirmed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/Confirmed_ft"
+                android:text="4543132"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"/>
                 <TextView
                     android:id="@+id/confirmed_delta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
+                    android:textColor="@color/Confirmed_ft"
+                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
             <View
-                android:layout_width="2dp"
+                android:layout_width="1dp"
+                android:layout_weight="0"
                 android:layout_height="match_parent"
-                android:background="#c0c0c0"
+                android:background="@color/tab_bg"
                 android:layout_marginStart="10dp"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:layout_gravity="">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
                 <TextView
-                    android:id="@+id/total_active"
+                    android:id="@+id/total_recovered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
+                    android:text="4543132"
+                    android:textColor="@color/recovered_ft"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/active_delta"
+                    android:id="@+id/recovered_delta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
+                    android:textColor="@color/recovered_ft"
+                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
             <View
-                android:layout_width="2dp"
+                android:layout_width="1dp"
+                android:layout_weight="0"
                 android:layout_height="match_parent"
-                android:background="#c0c0c0"
+                android:background="@color/tab_bg"
                 android:layout_marginStart="10dp"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp"
-                android:layout_gravity="">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
                 <TextView
                     android:id="@+id/total_vaccinated"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/vaccine_ft"
+                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"/>
                 <TextView
                     android:id="@+id/vaccinated_delta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
+                    android:textColor="@color/vaccine_ft"
+                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

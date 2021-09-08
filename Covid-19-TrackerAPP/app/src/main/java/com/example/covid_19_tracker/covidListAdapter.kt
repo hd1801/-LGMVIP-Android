@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CovidListAdapter (private val dataSet: Array<Model>) :
+class CovidListAdapter (private val dataSet: ArrayList<Model>) :
     RecyclerView.Adapter<CovidListAdapter.ViewHolder>() {
 
     /**
@@ -15,12 +15,12 @@ class CovidListAdapter (private val dataSet: Array<Model>) :
      */
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
+        val stateCode : TextView = view.findViewById(R.id.text_State)
         val totalConfirmed : TextView = view.findViewById(R.id.total_confirmed)
-        val totalActive : TextView = view.findViewById(R.id.total_active)
+        val totalActive : TextView = view.findViewById(R.id.total_recovered)
         val totalVaccinated : TextView = view.findViewById(R.id.total_vaccinated)
         val deltaConfirmed : TextView = view.findViewById(R.id.confirmed_delta)
-        val deltaActive : TextView = view.findViewById(R.id.active_delta)
+        val deltaActive : TextView = view.findViewById(R.id.recovered_delta)
         val deltaVaccinated : TextView = view.findViewById(R.id.vaccinated_delta)
     }
 
@@ -38,7 +38,13 @@ class CovidListAdapter (private val dataSet: Array<Model>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-//        viewHolder.deltaActive.text = dataSet[position].
+        viewHolder.stateCode.text=dataSet[position].stateCode
+        viewHolder.deltaActive.text = dataSet[position].deltaRecovered
+        viewHolder.deltaConfirmed.text = dataSet[position].deltaConfirmed
+        viewHolder.deltaVaccinated.text = dataSet[position].deltaVaccinated
+        viewHolder.totalActive.text = dataSet[position].totalRecovered
+        viewHolder.totalConfirmed.text = dataSet[position].totalConfirmed
+        viewHolder.totalVaccinated.text = dataSet[position].totalVaccinated
     }
 
     // Return the size of your dataset (invoked by the layout manager)

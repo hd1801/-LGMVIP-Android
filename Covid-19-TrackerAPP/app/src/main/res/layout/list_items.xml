@@ -19,7 +19,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:text="AL"
                 android:textColor="@color/state_ft"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_vertical"/>
@@ -41,7 +40,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:textColor="@color/Confirmed_ft"
-                android:text="4543132"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"/>
                 <TextView
@@ -50,7 +48,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:textColor="@color/Confirmed_ft"
-                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
@@ -71,7 +68,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
-                    android:text="4543132"
                     android:textColor="@color/recovered_ft"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"/>
@@ -81,7 +77,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:textColor="@color/recovered_ft"
-                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>
@@ -103,7 +98,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
                     android:textColor="@color/vaccine_ft"
-                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="bold"/>
                 <TextView
@@ -112,7 +106,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="13sp"
                     android:textColor="@color/vaccine_ft"
-                    android:text="4543132"
                     android:layout_gravity="center_horizontal"
                     />
             </LinearLayout>

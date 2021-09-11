@@ -2,7 +2,7 @@ package com.example.covid_19_tracker
 
 import org.json.JSONObject
 
- data class Model(val completeObject :JSONObject,val stateCode : String){
+data class Model(val completeObject :JSONObject,val stateCode : String){
 
 private val deltaCasesObject : JSONObject? =  completeObject.optJSONObject("delta")
 private val totalCasesObject : JSONObject = completeObject.getJSONObject("total")
@@ -39,6 +39,4 @@ private val totalCasesObject : JSONObject = completeObject.getJSONObject("total"
      } else {
       ""
      }
-
-
 }

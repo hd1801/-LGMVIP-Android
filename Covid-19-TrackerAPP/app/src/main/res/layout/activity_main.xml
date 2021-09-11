@@ -16,7 +16,7 @@
             android:outlineAmbientShadowColor="@color/card_bg"
             android:layout_marginBottom="5dp"
             app:cardBackgroundColor="@color/tab_bg"
-            >
+            tools:targetApi="p">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
